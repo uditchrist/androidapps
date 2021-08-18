@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="402dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="@string/user_login"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#C60E89"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameid"
+        android:layout_width="413dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_your_name"
+        android:textColor="#E4DCDC"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <EditText
+        android:id="@+id/rollid"
+        android:layout_width="413dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_your_roll_number"
+        android:textColor="#E4DCDC"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toTopOf="@+id/nameid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2047262 Udit Gupta"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
